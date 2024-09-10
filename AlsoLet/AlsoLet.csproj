@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net6.0;net40</TargetFrameworks>
+    
+    <PackageId>HiraokaHyperTools.AlsoLet</PackageId>
+    <Version>0.1.0</Version>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Authors>kenjiuno</Authors>
+    <Company>HIRAOKA HYPERS TOOLS, Inc.</Company>
+    <Description>Supply Also and Let extension methods</Description>
+    <!-- https://spdx.org/licenses/ -->
+    <PackageLicenseExpression>BSD-2-Clause</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/HiraokaHyperTools/AlsoLet</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/HiraokaHyperTools/AlsoLet.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net6.0' ">
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
